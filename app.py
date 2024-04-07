@@ -1,9 +1,11 @@
 import sqlite3
 from flask import Flask, render_template,  request, url_for, flash, redirect
 from werkzeug.exceptions import abort
+import os 
+
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'your secret key'
+app.config['SECRET_KEY'] = 'gtvHgDlT4kRCaTk18iLMqM423puGQH7V'
 
 @app.route('/')
 def index():
